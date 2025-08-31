@@ -1,0 +1,17 @@
+(function(){
+  window['optimizely'] = window['optimizely'] || [];
+  window['optimizely'].push(['activateGeoDelayedExperiments', {
+    'location':{
+      'city': "TANUKU",
+      'continent': "AS",
+      'country': "IN",
+      'region': "AP",
+      'dma': ""
+    },
+    'ip':"163.223.49.7"
+  }]);
+})
+
+()
+
+;

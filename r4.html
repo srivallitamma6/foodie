@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Milksheks</title>
+   <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      margin: 0;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .box {
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 10px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+    }
+
+    .box img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .text {
+      margin-top: 10px;
+      font-weight: bold;
+      font-family: Roboto, sans-serif;
+      color: blueviolet;
+    }
+
+    h4 {
+      margin: 5px 0;
+    }
+
+    .buy-button {
+      margin-top: 10px;
+      padding: 8px 16px;
+      background-color: rgb(119, 188, 192);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .buy-button:hover {
+      background-color: indigo;
+    }
+
+    @media (max-width: 600px) {
+      .box img {
+        height: 150px;
+      }
+    }
+
+    @media (max-width: 400px) {
+      .text {
+        font-size: 14px;
+      }
+      .buy-button {
+        padding: 6px 12px;
+        font-size: 14px;
+      }
+    }
+  </style>
+
+  <script>
+    function placeOrder() {
+      alert("Order placed");
+    }
+  </script>
+</head>
+<body>
+
+  <div class="gallery">
+    <div class="box">
+      <img src="images/corn.jpg" alt="Brownie">
+      <div class="text">Corn biryani</div>
+      <h4>Price: ₹180</h4>
+      <button class="buy-button" onclick="placeOrder()">Buy Now</button>
+    </div>
+
+    <div class="box">
+      <img src="images/mush.jpg" alt="Cheesecake">
+      <div class="text">Mushroom biryani</div>
+      <h4>Price: ₹200</h4>
+      <button class="buy-button" onclick="placeOrder()">Buy Now</button>
+    </div>
+
+    <div class="box">
+      <img src="images/paneer.jpg" alt="Panner Biryani">
+      <div class="text">Panner Biryani</div>
+      <h4>Price: ₹250</h4>
+      <button class="buy-button" onclick="placeOrder()">Buy Now</button>
+    </div>
+
+    <div class="box">
+      <img src="images/tomato.jpg" alt="Flan">
+      <div class="text">Tomato Rice</div>
+      <h4>Price: ₹210</h4>
+      <button class="buy-button" onclick="placeOrder()">Buy Now</button>
+    </div>
+
+    <div class="box">
+      <img src="images/pot.jpg" alt="Gulab Jamun">
+      <div class="text">Pot Biryani</div>
+      <h4>Price: ₹60</h4>
+      <button class="buy-button" onclick="placeOrder()">Buy Now</button>
+    </div>
+
+    <div class="box">
+      <img src="images/cori.jpg" alt="Pista Icecream">
+      <div class="text">Coriander Rice</div>
+      <h4>Price: ₹80</h4>
+      <button class="buy-button" onclick="placeOrder()">Buy Now</button>
+    </div>
+
+    <div class="box">
+      <img src="images/bri.jpg" alt="Pudding">
+      <div class="text">Brinjal Rice</div>
+      <h4>Price: ₹90</h4>
+      <button class="buy-button" onclick="placeOrder()">Buy Now</button>
+    </div>
+
+    <div class="box">
+      <img src="images/carr.jpg" alt="Mango Kulfi">
+      <div class="text">Carrot Rice</div>
+      <h4>Price: ₹80</h4>
+      <button class="buy-button" onclick="placeOrder()">Buy Now</button>
+    </div>
+
+    <div class="box">
+      <img src="images/fried.jpg" alt="Chocolate Icecream">
+      <div class="text">Mixed Fried rice</div>
+      <h4>Price: ₹80</h4>
+      <button class="buy-button" onclick="placeOrder()">Buy Now</button>
+    </div>
+
+    <div class="box">
+      <img src="images/fri.jpg" alt="Caramel Icecream">
+      <div class="text">Fried Rice</div>
+      <h4>Price: ₹180</h4>
+      <button class="buy-button" onclick="placeOrder()">Buy Now</button>
+    </div>
+
+    <div class="box">
+      <img src="images/mu.png" alt="Knafeh">
+      <div class="text">Mushroom Fried Rice</div>
+      <h4>Price: ₹150</h4>
+      <button class="buy-button" onclick="placeOrder()">Buy Now</button>
+    </div>
+
+    <div class="box">
+      <img src="images/pf.jpg" alt="Chocolate Trifle">
+      <div class="text">Panner Fried Rice</div>
+      <h4>Price: ₹80</h4>
+      <button class="buy-button" onclick="placeOrder()">Buy Now</button>
+    </div>
+
+    <div class="box">
+      <img src="images/pan.jpg" alt="Lemon Tart">
+      <div class="text">Panner Corn Biryani</div>
+      <h4>Price: ₹80</h4>
+      <button class="buy-button" onclick="placeOrder()">Buy Now</button>
+    </div>
+
+    <div class="box">
+      <img src="images/mi.jpg" alt="Strawberry Icecream">
+      <div class="text">Mixed Veg Biryani</div>
+      <h4>Price: ₹80</h4>
+      <button class="buy-button" onclick="placeOrder()">Buy Now</button>
+    </div>
+
+    <div class="box">
+      <img src="images/pud.jpg" alt="Vennala Icecream">
+      <div class="text">Pudina rice</div>
+      <h4>Price: ₹80</h4>
+      <button class="buy-button" onclick="placeOrder()">Buy Now</button>
+    </div>
+
+    <div class="box">
+      <img src="images/co.jpg" alt="Butterscotch Icecream">
+      <div class="text">coconut Rice</div>
+      <h4>Price: ₹80</h4>
+      <button class="buy-button" onclick="placeOrder()">Buy Now</button>
+    </div>
+  </div>
+
+</body>
+</html>

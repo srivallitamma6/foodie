@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Milksheks & Mocktails</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      margin: 0;
+      background: #f9f9f9;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    @media (max-width: 1024px) {
+      .gallery {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .box {
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 10px;
+      text-align: center;
+      background-color: white;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .box img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .text {
+      margin-top: 10px;
+      font-weight: bold;
+      font-family: 'Roboto', sans-serif;
+      color: blueviolet;
+    }
+
+    h4 {
+      margin: 5px 0;
+    }
+
+    .buy-button {
+      margin-top: 10px;
+      padding: 8px 16px;
+      background-color: rgb(119, 188, 192);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .buy-button:hover {
+      background-color: indigo;
+    }
+  </style>
+
+  <script>
+    function placeOrder() {
+      alert("Order placed");
+    }
+  </script>
+</head>
+<body>
+
+  <div class="gallery">
+    <div class="box">
+      <img src="images/mojito.jpg" alt="Mojito">
+      <div class="text">Mojito Mocktail</div>
+      <h4>Price: ₹180</h4>
+      <button class="buy-button" onclick="placeOrder()">Buy Now</button>
+    </div>
+
+    <div class="box">
+      <img src="images/cranberry.jpg" alt="Cranberry">
+      <div class="text">Cranberry Mocktail</div>
+      <h4>Price: ₹200</h4>
+      <button class="buy-button" onclick="placeOrder()">Buy Now</button>
+    </div>
+
+    <div class="box">
+      <img src="images/grape.jpg" alt="Grape">
+      <div class="text">Grape Mocktail</div>
+      <h4>Price: ₹250</h4>
+      <button class="buy-button" onclick="placeOrder()">Buy Now</button>
+    </div>
+
+    <div class="box">
+      <img src="images/bl.jpg" alt="Blueberry">
+      <div class="text">Blue Lagoon Mocktail</div>
+      <h4>Price: ₹60</h4>
+      <button class="buy-button" onclick="placeOrder()">Buy Now</button>
+    </div>
+
+    <div class="box">
+      <img src="images/dr.jpg" alt="Oreo">
+      <div class="text">Dragon Fruit Mocktail</div>
+      <h4>Price: ₹80</h4>
+      <button class="buy-button" onclick="placeOrder()">Buy Now</button>
+    </div>
+
+    <div class="box">
+      <img src="images/str.jpg" alt="Cotton Candy">
+      <div class="text">Strawberry Mocktail</div>
+      <h4>Price: ₹90</h4>
+      <button class="buy-button" onclick="placeOrder()">Buy Now</button>
+    </div>
+
+    <div class="box">
+      <img src="images/spim.jpg" alt="Biscoff">
+      <div class="text">Spicy Margarita Mocktail</div>
+      <h4>Price: ₹80</h4>
+      <button class="buy-button" onclick="placeOrder()">Buy Now</button>
+    </div>
+
+    <div class="box">
+      <img src="images/cit.jpg" alt="Peanut Butter">
+      <div class="text">Citrus Orang Mocktail</div>
+      <h4>Price: ₹80</h4>
+      <button class="buy-button" onclick="placeOrder()">Buy Now</button>
+    </div>
+
+    <div class="box">
+      <img src="images/pepp.jpg" alt="Malted Vanilla">
+      <div class="text">Choclate PepperMint Mocktail</div>
+      <h4>Price: ₹180</h4>
+      <button class="buy-button" onclick="placeOrder()">Buy Now</button>
+    </div>
+
+    <div class="box">
+      <img src="images/pin.jpg" alt="Mango">
+      <div class="text">Pineapple Mojito Mocktail</div>
+      <h4>Price: ₹150</h4>
+      <button class="buy-button" onclick="placeOrder()">Buy Now</button>
+    </div>
+
+    <div class="box">
+      <img src="images/frm.jpg" alt="Nutella">
+      <div class="text">Fruity Mocktail</div>
+      <h4>Price: ₹80</h4>
+      <button class="buy-button" onclick="placeOrder()">Buy Now</button>
+    </div>
+
+    <div class="box">
+      <img src="images/mag.jpg" alt="Milkybar">
+      <div class="text">MagicalFruit Mocktail</div>
+      <h4>Price: ₹80</h4>
+      <button class="buy-button" onclick="placeOrder()">Buy Now</button>
+    </div>
+
+    <div class="box">
+      <img src="images/cr.jpg" alt="Protein">
+      <div class="text">Creamy Fruit Moctail</div>
+      <h4>Price: ₹80</h4>
+      <button class="buy-button" onclick="placeOrder()">Buy Now</button>
+    </div>
+
+    <div class="box">
+      <img src="images/or.jpg" alt="Dry Fruit">
+      <div class="text">Orange Pineapple Mocktail</div>
+      <h4>Price: ₹80</h4>
+      <button class="buy-button" onclick="placeOrder()">Buy Now</button>
+    </div>
+
+    <div class="box">
+      <img src="images/cu.jpg" alt="Dark Chocolate">
+      <div class="text">Cucumber Mint Mocktail</div>
+      <h4>Price: ₹80</h4>
+      <button class="buy-button" onclick="placeOrder()">Buy Now</button>
+    </div>
+  </div>
+
+</body>
+</html>
